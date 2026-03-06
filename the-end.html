@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The End</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="top">
+    <h1>The End</h1>
+    <h2>Realm</h2>
+    <h2>Here we go again</h2>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="all-builds.html">All Builds</a>
+    <a href="highlights.html">Hightlights</a>
+</nav>
+
+<main>
+    <div class="buildbottom">
+        <div class="date">Started: 3rd March 2025</div>
+        <p class="center">
+            The End the place no one wants to live. Unless you teraform the whole place and make it an idyllic place to live.
+            This isn't the first time trying to do this but want to make it the last time.
+        </p>
+        <img src="images/the-end/end-1.png" alt="Imagine The End" class="center">
+        <img src="images/the-end/end-2.png" alt="Imagine The End" class="center">
+        <img src="images/the-end/end-3.png" alt="Imagine The End" class="center">
+        <img src="images/the-end/end-4.png" alt="Imagine The End" class="center">
+        <p class="center">
+            Got bored halfway through as this is a massive task. I ended up putting a flowing river with a pond as the source.
+        </p>
+        <img src="images/the-end/end-pond.png" alt="Imagine The End" class="center">
+        <img src="images/the-end/end-river.png" alt="Imagine The End" class="center">
+        <p>
+            Built a small house and put some bees into the end.
+        </p>
+    </div>
+</main>
+
+<button id="backToTop" onclick="scrollToTop()">↑</button>
+
+<script>
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+    backToTop.style.display = window.scrollY > 300 ? "block" : "none";
+});
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}
+</script>
+
+</body>
+</html>

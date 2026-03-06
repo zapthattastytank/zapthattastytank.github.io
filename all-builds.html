@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Builds</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="top">
+    <h1>📑 All Minecraft Builds</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="all-builds.html">All Builds</a>
+    <a href="highlights.html">Hightlights</a>
+    <!--could add other pages in here--> 
+</nav>
+
+<main>
+    <ul>
+        <li><div class="date">Started: 1st November 2024 <a href="floating-island.html">Floating Island</a><img class="date" src="images/floating-island/pond-1.png"></div></li>
+        <li><div class="date">Started: 3rd March 2025 <a href="the-end.html">The End</a><img class="date" src="images/the-end/end-4.png"></div></li>
+        <li><div class="date">Started: 20th July 2025 <a href="wizards-hut.html">Wizards Hut</a><img class="date" src="images/wizard-hut/wizard-hut.png"></div></li>
+        <li><div class="date">Started: 15th July 2025 <a href="villagers-farm.html">Villagers Farm</a><img class="date" src="images/villager-farm/overview-1.png"></div></li>
+        <li><div class="date">Started: 30th October 2025 <a href="mooshroom-island.html">Mooshroom Island</a><img class="date" src="images/mooshroom-island/start.png"></div></li>
+        <li><div class="date">Started: 30th October 2025 <a href="item-sorter.html">Item Sorter</a><img class="date" src="images/item-sorter/planning.png"></div></li>
+        <li><div class="date">Started: 30th October 2025 <a href="castle.html">Castle</a><img class="date" src="images/castle/front-inprogress.png"></div></li>
+    </ul>
+</main>
+
+
+<button id="backToTop" onclick="scrollToTop()">↑</button>
+
+<script>
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+    backToTop.style.display = window.scrollY > 300 ? "block" : "none";
+});
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}
+</script>
+
+
+</body>
+</html>

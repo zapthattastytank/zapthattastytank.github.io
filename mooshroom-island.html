@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mooshroom Island</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="top">
+    <h1>Mooshroom Island</h1>
+    <h2>Realm</h2>
+    <h2>Here we go again</h2>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="all-builds.html">All Builds</a>
+    <a href="highlights.html">Hightlights</a>
+</nav>
+
+<main>
+    <div class="build">
+        <div class="date">Started: 30th October 2025</div>
+        <p class="center">
+            Mooshroom island is nice but whats nicer is turning it into a green island and then living on it. 
+            The added bonus is no mobs spawn on the island so you don't have to light up the island.
+        </p>
+        <img src="images/mooshroom-island/start.png" alt="Mooshroom Island" class="center">
+        <img src="images/mooshroom-island/mooshroom-containment.png" alt="Mooshroom Island" class="center">
+        <img src="images/mooshroom-island/mooshroom-containment-1.png" alt="Mooshroom Island" class="center">
+        <p class="center">
+            Got bored halfway through as this is a massive task. I ended up putting a flowing river with a pond as the source.
+        </p>
+        <img src="images/mooshroom-island/mooshroom-containment-1.png" alt="Mooshroom Island" class="center">
+        <img src="images/mooshroom-island/mooshroom-containment-1.png" alt="Mooshroom Island" class="center">
+        <p>
+            test
+        </p>
+    </div>
+</main>
+
+<button id="backToTop" onclick="scrollToTop()">↑</button>
+
+<script>
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+    backToTop.style.display = window.scrollY > 300 ? "block" : "none";
+});
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}
+</script>
+
+</body>
+</html>

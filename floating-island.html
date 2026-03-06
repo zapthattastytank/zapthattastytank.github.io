@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Floating Islands</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="top">
+    <h1>Floating Islands Realm</h1>
+    <h2>Realm</h2>
+    <h2>Here we go again</h2>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="all-builds.html">All Builds</a>
+    <a href="highlights.html">Hightlights</a>
+</nav>
+
+<main>
+    <div class="buildbottom">
+        <div class="date">Started: 1st November 2024</div>
+        <p class="center">
+            This is my first base on the here we go again realm.
+            It started with one small island with a bubble elevator. 
+            With my first house built on top. 
+        </p>
+        <img src="images/floating-island/first-1.png" alt="Not Found" class="center">
+        <img src="images/floating-island/first-2.png" alt="Not Found" class="center">
+        <img src="images/floating-island/first-3.png" alt="Not Found" class="center">
+        <p class="center">
+            As I played more, I added a bridge to a second island and then a cave system.
+            Which has been filled with all sorts of ores, vines and a staircase. 
+        </p>
+        <img src="images/floating-island/pond-1.png" alt="Not Found" class="center">
+        <img src="images/floating-island/pond-2.png" alt="Not Found" class="center">
+        <p class="center">
+            I then decided that I would add another bridge to the biggest island of them all and finally the neather portal donut ring
+        </p>
+        <img src="images/floating-island/bridge-1.png" alt="Not Found" class="center">
+        <img src="images/floating-island/bridge-2.png" alt="Not Found" class="center">
+        <img src="images/floating-island/donut-1.png" alt="Not Found" class="center">
+        <img src="images/floating-island/main-1.png" alt="Not Found" class="center">
+
+    </div>
+</main>
+
+<button id="backToTop" onclick="scrollToTop()">↑</button>
+
+<script>
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+    backToTop.style.display = window.scrollY > 300 ? "block" : "none";
+});
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}
+</script>
+
+</body>
+</html>

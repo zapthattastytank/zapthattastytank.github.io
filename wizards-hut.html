@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wizards Hut</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="top">
+    <h1>Wizards Hut and 1st Storage System</h1>
+    <h2>Realm</h2>
+    <h2>Here we go again</h2>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="all-builds.html">All Builds</a>
+    <a href="highlights.html">Hightlights</a>
+</nav>
+
+<main>
+    <div class="buildbottom">
+        <div class="date">Started: 20th June</div>
+        <p class="center">
+            This is the first attempt at keeping the need and want for a storage system at bay.
+            The floating wizards hut is being help up by the mage totems below.
+            The totems desire fuel in the form of blaze rods.
+        </p>
+        <img src="images/wizard-hut/wizard-hut.png" alt="Floating Wizard Hut" class="center">
+
+        <p class="center">
+            Inside the tower this is the storage system which is really only a stack of chests with hoppers connecting the tower.
+            Each tower is then connected to a light system which shows how full the chests are.
+        </p>
+
+    </div>
+</main>
+
+<button id="backToTop" onclick="scrollToTop()">↑</button>
+
+<script>
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+    backToTop.style.display = window.scrollY > 300 ? "block" : "none";
+});
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Villagers Farm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="top">
+    <h1>Villagers Farm</h1>
+    <h2>Realm</h2>
+    <h2>Here we go again</h2>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="all-builds.html">All Builds</a>
+    <a href="highlights.html">Hightlights</a>
+</nav>
+
+<main class="hightlights">
+    <div class="build">
+        <div class="date">Started: 15th July 2025</div>
+        <p class="center">
+            Started building another area for my villagers to live in as a home away from home.
+            I will move the villagers from their current mud hut to here.
+        </p>
+        <img src="images/villager-farm/overview.png" alt="Village overview" class="center">
+        <p class="center">
+            The first building in the village was a lovely little bee house. 
+            This wasn't built for living in as I filled the house with a fish tank.
+        </p>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <img src="images/villager-farm/bee-house.png" alt="Bee house" style="width:100%">
+            <img src="images/villager-farm/bee-house-1.png" alt="Bee house" style="width:100%">
+
+        </div>
+        <div class="column">
+            <img src="images/villager-farm/bee-flowers.png" alt="Flowers" style="width:100%">
+            <img src="images/villager-farm/bee-pond.png" alt="Pond" style="width:100%">
+
+        </div>
+        <div class="column">
+            <img src="images/villager-farm/overview.png" alt="Overview" style="width:100%">
+            <img src="images/villager-farm/overview-1.png" alt="Overview" style="width:100%">
+
+        </div>
+        
+    </div>
+
+    <div class="buildbottom">
+        <p class="center">
+            The building of the village and the progress of different parts of it all coming together.
+            There is a lack of photos of this area being built. Here are some photos of the village being completed.
+        </p>
+    </div>
+</main>
+
+<button id="backToTop" onclick="scrollToTop()">↑</button>
+
+<script>
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+    backToTop.style.display = window.scrollY > 300 ? "block" : "none";
+});
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}
+</script>
+
+</body>
+</html>

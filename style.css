@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1b1b1b;
+    color: #e0e0e0;
+}
+
+header {
+    background: #2d7d46;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    background: #222;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #6fdc8c;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+main a:link, a:visited {
+    color: #3fa866;
+}
+
+.highlight {
+    max-width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.build {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.buildbottom {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.date {
+    font-size: 1em;
+    color: #aaa;
+}
+
+img.date {
+    max-width: 2.5%;
+}
+
+/* centers text */
+.center {
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+    width: 85%;
+    padding-bottom: 10px;
+}
+
+/* Three image containers (use 32.4% for 3, and 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 32.4%;
+  padding: 3px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Back to top button */
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background: #2d7d46;
+    color: white;
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+#backToTop:hover {
+    background: #3fa866;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}

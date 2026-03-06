@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Minecraft Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="top">
+    <h1>🧱 My Minecraft Builds</h1>
+    <p>Search and explore my creations</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="all-builds.html">All Builds</a>
+    <a href="highlights.html">Hightlights</a>
+</nav>
+
+<main>
+    <input type="text" id="searchInput" placeholder="Search builds...">
+
+    <div id="results">
+        <div class="page" data-title="Floating Islands">
+            <h3><a href="floating-island.html">Floating Islands</a></h3>
+            <div class="date">Started: 1st November 2024</div>
+        </div>
+
+        <div class="page" data-title="The End Teraforming Project">
+            <h3><a href="the-end.html">The End Teraforming Project</a></h3>
+            <div class="date">Started: 3rd March 2025</div>
+        </div>
+
+        <div class="page" data-title="The Wizards Hut">
+            <h3><a href="wizards-hut.html">The Wizards Hut and First Item Storage</a></h3>
+            <div class="date">Started: 20th June 2025</div>
+        </div>
+
+        <div class="page" data-title="Villagers Farm">
+            <h3><a href="villagers-farm.html">Villagers Farm</a></h3>
+            <div class="date">Started: 15th July 2025</div>
+        </div>
+
+        <div class="page" data-title="Mooshroom Island">
+            <h3><a href="mooshroom-island.html">Mooshroom Island</a></h3>
+            <div class="date">Started: 30th October 2025</div>
+        </div>
+
+        <div class="page" data-title="Item Sorter">
+            <h3><a href="item-sorter.html">Item Sorter</a></h3>
+            <div class="date">Started: 15th November 2025</div>
+        </div>
+
+        <div class="page" data-title="Castle">
+            <h3><a href="castle.html">Castle</a></h3>
+            <div class="date">Started: 23rd November 2025</div>
+        </div>
+    </div>
+</main>
+
+<button id="backToTop" onclick="scrollToTop()">↑</button>
+
+<script>
+const searchInput = document.getElementById("searchInput");
+const entries = document.querySelectorAll(".page");
+
+searchInput.addEventListener("keyup", () => {
+    const value = searchInput.value.toLowerCase();
+    entries.forEach(page => {
+        const title = page.dataset.title.toLowerCase();
+        page.style.display = title.includes(value) ? "block" : "none";
+    });
+});
+
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+    backToTop.style.display = window.scrollY > 300 ? "block" : "none";
+});
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}
+</script>
+
+</body>
+</html>

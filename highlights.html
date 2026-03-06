@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Builds</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="top">
+    <h1>🌟 Hightlights</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="all-builds.html">All Builds</a>
+    <a href="highlights.html">Hightlights</a>
+    <!--could add other pages in here--> 
+</nav>
+
+<main class="highlight">
+    <div class="row">
+        <div class="column">
+            <img src="images/floating-island/pond-1.png" alt="Floating Island with pond" style="width:100%">
+            <img src="images/highlights/log.png" alt="Fallen Tree" style="width:100%">
+            <img src="images/highlights/railway.png" alt="View from the railway" style="width:100%">
+            <img src="images/mooshroom-island/mooshroom-containment.png" alt="Mushroom Containment" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="images/floating-island/donut-1.png" alt="Floating Island with donut" style="width:100%">
+            <img src="images/highlights/overview.png" alt="spawn chunks" style="width:100%">
+            <img src="images/villager-farm/bee-flowers.png" alt="Bees and Flowers" style="width:100%">
+            <img src="images/item-sorter/planning.png" alt="Item Sorter" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="images/the-end/end-1.png" alt="Teraforming the End" style="width:100%">
+            <img src="images/highlights/bench.png" alt="Sat on a bench" style="width:100%">
+            <img src="images/iron-farm/overview.png" alt="Iron Farm" style="width:100%">
+            <img src="images/item-sorter/test-run.png" alt="Item Sorter" style="width:100%">
+        </div>
+        
+    </div>
+</main>
+
+
+<button id="backToTop" onclick="scrollToTop()">↑</button>
+
+<script>
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+    backToTop.style.display = window.scrollY > 300 ? "block" : "none";
+});
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}
+</script>
+
+
+</body>
+</html>

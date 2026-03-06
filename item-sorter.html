@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Item Sorter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="top">
+    <h1>Item Sorter</h1>
+    <h2>Realm</h2>
+    <h2>Here we go again</h2>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="all-builds.html">All Builds</a>
+    <a href="highlights.html">Hightlights</a>
+</nav>
+
+<main>
+    <div class="build">
+        <div class="date">Started: 15th November 2025</div>
+        <p class="center">
+            I wanted to build a item sorter, so I ended up building a island to have a excuse to build one.
+            So this is the first real item sorter on the server and the bigest and most complicated item sorter I have ever built.
+        </p>
+        <img src="images/item-sorter/planning.png" alt="Item sorter" class="center">
+        <img src="images/item-sorter/sorting-chest.png" alt="Item sorter" class="center">
+        <img src="images/item-sorter/sorting-chest-1.png" alt="Item sorter" class="center">
+        <img src="images/item-sorter/test-run.png" alt="Item sorter" class="center">
+        <p class="center">
+            test
+        </p>
+        <img src="images/item-sorter/test-run.png" alt="Item sorter" class="center">
+        <img src="images/item-sorter/test-run.png" alt="Item sorter" class="center">
+        <p>
+            test
+        </p>
+    </div>
+</main>
+
+<button id="backToTop" onclick="scrollToTop()">↑</button>
+
+<script>
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+    backToTop.style.display = window.scrollY > 300 ? "block" : "none";
+});
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}
+</script>
+
+</body>
+</html>
